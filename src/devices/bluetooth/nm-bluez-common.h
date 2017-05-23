@@ -15,7 +15,7 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *
- * Copyright (C) 2009 Red Hat, Inc.
+ * Copyright (C) 2017 Red Hat, Inc.
  */
 
 #ifndef __NETWORKMANAGER_BLUEZ_COMMON_H__
@@ -32,6 +32,7 @@
 #define BLUEZ5_ADAPTER_INTERFACE "org.bluez.Adapter1"
 #define BLUEZ5_DEVICE_INTERFACE  "org.bluez.Device1"
 #define BLUEZ5_NETWORK_INTERFACE "org.bluez.Network1"
+#define BLUEZ5_NETWORK_SERVER_INTERFACE "org.bluez.NetworkServer1"
 
 #define BLUEZ4_MANAGER_INTERFACE "org.bluez.Manager"
 #define BLUEZ4_ADAPTER_INTERFACE "org.bluez.Adapter"
