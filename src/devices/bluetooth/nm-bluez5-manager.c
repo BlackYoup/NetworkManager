@@ -537,9 +537,9 @@ dispose (GObject *object)
 {
 	NMBluez5Manager *self = NM_BLUEZ5_MANAGER (object);
 	NMBluez5ManagerPrivate *priv = NM_BLUEZ5_MANAGER_GET_PRIVATE (self);
-	CList *iter;
+	CList *iter, *safe;
 
-	c_list_for_each (iter, &priv->network_servers)
+	c_list_for_each_safe (iter, safe, &priv->network_servers)
 		_network_server_free (self, c_list_entry (iter, NetworkServer, network_servers));
 
 	if (priv->proxy) {
