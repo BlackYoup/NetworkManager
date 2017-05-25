@@ -41,5 +41,6 @@
 #define BLUEZ4_NETWORK_INTERFACE "org.bluez.Network"
 
 #define NM_BLUEZ_MANAGER_BDADDR_ADDED "bdaddr-added"
+#define NM_BLUEZ_MANAGER_NETWORK_SERVER_ADDED "network-server-added"
 
 #endif  /* NM_BLUEZ_COMMON_H */
