@@ -3275,6 +3275,23 @@ nm_device_unrealize (NMDevice *self, gboolean remove_resources, GError **error)
 	return TRUE;
 }
 
+static gboolean
+component_added (NMDevice *self, GObject *component)
+{
+	NMDevicePrivate *priv = NM_DEVICE_GET_PRIVATE (self);
+
+	if (priv->state == NM_DEVICE_STATE_DISCONNECTED) {
+		/* A device could have stayed disconnected because it would
+		 * want to register with a network server that now become
+		 * available. */
+		nm_device_recheck_available_connections (self);
+		if (g_hash_table_size (priv->available_connections) > 0)
+			nm_device_emit_recheck_auto_activate (self);
+	}
+
+	return FALSE;
+}
+
 /**
  * nm_device_notify_component_added():
  * @self: the #NMDevice
@@ -3293,11 +3310,11 @@ nm_device_notify_component_added (NMDevice *self, GObject *component)
 	NMDeviceClass *klass;
 
 	g_return_val_if_fail (NM_IS_DEVICE (self), FALSE);
-	g_return_val_if_fail (G_IS_OBJECT (component), FALSE);
 
 	klass = NM_DEVICE_GET_CLASS (self);
 	if (klass->component_added)
 		return klass->component_added (self, component);
+
 	return FALSE;
 }
 
@@ -14141,6 +14158,7 @@ nm_device_class_init (NMDeviceClass *klass)
 	klass->link_changed = link_changed;
 
 	klass->is_available = is_available;
+	klass->component_added = component_added;
 	klass->act_stage1_prepare = act_stage1_prepare;
 	klass->act_stage2_config = act_stage2_config;
 	klass->act_stage3_ip4_config_start = act_stage3_ip4_config_start;
