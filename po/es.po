@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-29 16:19+0200\n"
-"PO-Revision-Date: 2017-04-21 06:16-0400\n"
+"PO-Revision-Date: 2017-03-22 10:47-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -3940,9 +3940,9 @@ msgid "Error: Option '--pretty' is mutually exclusive with '--terse'."
 msgstr "Error: la opción «--pretty» es mutuamente exclusiva con «--terse»."
 
 #: ../clients/cli/nmcli.c:344
-#, c-format
+#, fuzzy, c-format
 msgid "Error: '%s' is not a valid argument for '%s' option."
-msgstr ""
+msgstr "Error: «%s» no es válido argumento para opción «%s»."
 
 #: ../clients/cli/nmcli.c:358 ../clients/cli/nmcli.c:370
 #, c-format
@@ -3950,9 +3950,9 @@ msgid "Error: '%s' is not valid argument for '%s' option."
 msgstr "Error: «%s» no es válido argumento para opción «%s»."
 
 #: ../clients/cli/nmcli.c:394
-#, c-format
+#, fuzzy, c-format
 msgid "Error: '%s' is not a valid timeout."
-msgstr ""
+msgstr "Error: '%s' no es un tiempo de espera válido para opción '%s'."
 
 #: ../clients/cli/nmcli.c:401
 #, c-format
@@ -4089,61 +4089,61 @@ msgid "failure to select field"
 msgstr "No se pudo seleccionar el APN especificado"
 
 #: ../clients/cli/utils.c:1467
-#, c-format
+#, fuzzy, c-format
 msgid "Error reading nmcli output: %s\n"
-msgstr ""
+msgstr "Error: color errado: %s\n"
 
 #: ../clients/cli/utils.c:1472
-#, c-format
+#, fuzzy, c-format
 msgid "Error writing nmcli output: %s\n"
-msgstr ""
+msgstr "Error: propiedad inválida: %s\n"
 
 #: ../clients/cli/utils.c:1494
-#, c-format
+#, fuzzy, c-format
 msgid "Failed to create pager pipe: %s\n"
-msgstr ""
+msgstr "No se pudo establecer propiedad: %s"
 
 #: ../clients/cli/utils.c:1502
-#, c-format
+#, fuzzy, c-format
 msgid "Failed to fork pager: %s\n"
-msgstr ""
+msgstr "No se pudo establecer propiedad: %s"
 
 #: ../clients/cli/utils.c:1548 ../clients/cli/utils.c:1550
-#, c-format
+#, fuzzy, c-format
 msgid "Failed to duplicate pager pipe: %s\n"
-msgstr ""
+msgstr "No se pudo descifrar la clave privada: %d."
 
 #. Translators: the first %s is the partial value entered by
 #. * the user, the second %s a list of compatible values.
 #.
 #: ../clients/common/nm-client-utils.c:71
 #: ../clients/common/nm-client-utils.c:102
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is ambiguous (%s)"
-msgstr "'%s' es ambiguo (%s x %s)"
+msgstr "'%s' es ambiguo (%s)"
 
 #: ../clients/common/nm-client-utils.c:81
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid; use [%s] or [%s]"
-msgstr "'%s' no es un valor váldo para '%s'"
+msgstr "'%s' no es válido; use [%s] or [%s]"
 
 #: ../clients/common/nm-client-utils.c:114
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid; use [%s], [%s] or [%s]"
-msgstr "'%s' no es un valor váldo para '%s'"
+msgstr "'%s' no es válido; use [%s], [%s] o  [%s]"
 
 #: ../clients/common/nm-client-utils.c:151
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is ambiguous (%s x %s)"
 msgstr "'%s' es ambiguo (%s x %s)"
 
 #: ../clients/common/nm-client-utils.c:163
 #, c-format
 msgid "missing name, try one of [%s]"
-msgstr ""
+msgstr "Falta el nombre, intente uno de [%s]"
 
 #: ../clients/common/nm-meta-setting-access.c:484
-#, fuzzy, c-format
+#, c-format
 msgid "field '%s' has to be alone"
 msgstr "el campo «%s» tiene que estar solo"
 
@@ -4154,20 +4154,21 @@ msgstr "Campo inválido '%s'; campos permitidos: %s"
 
 #: ../clients/common/nm-meta-setting-desc.c:100
 #: ../clients/common/nm-meta-setting-desc.c:156
-#, fuzzy, c-format
+#, c-format
 msgid "invalid prefix '%s'; <1-%d> allowed"
-msgstr "Ruta inválida: %s"
+msgstr "Prefijo inválido '%s'; <1-%d> permitido"
 
 #: ../clients/common/nm-meta-setting-desc.c:108
-#, fuzzy, c-format
+#, c-format
 msgid "invalid IP address: %s"
-msgstr "Formato de dirección IPv4 inválido '%s'"
+msgstr "Formato de dirección IP inválido: %s"
 
 #: ../clients/common/nm-meta-setting-desc.c:133
+#, fuzzy
 msgid ""
 "The valid syntax is: 'ip[/prefix] [next-hop] [metric] [attribute=val]... [,"
 "ip[/prefix] ...]'"
-msgstr ""
+msgstr "'%s' no es válido (el formato es: ip[/prefix] [next-hop] [metric])"
 
 #: ../clients/common/nm-meta-setting-desc.c:167
 #, c-format
@@ -4187,17 +4188,19 @@ msgstr "Ruta inválida: %s"
 #: ../clients/common/nm-meta-setting-desc.c:225
 msgid "default route cannot be added (NetworkManager handles it by itself)"
 msgstr ""
+"No se puede agregar la ruta predeterminada (NetworkManager se encarga por sí "
+"mismo)"
 
 #: ../clients/common/nm-meta-setting-desc.c:280
-#, fuzzy, c-format
+#, c-format
 msgid "invalid priority map '%s'"
-msgstr "Valor de paridad invalido '%s'"
+msgstr "Mapa de prioridad inválido '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:287
 #: ../clients/common/nm-meta-setting-desc.c:293
-#, fuzzy, c-format
+#, c-format
 msgid "priority '%s' is not valid (<0-%ld>)"
-msgstr "Tipo de conexión '%s' no es válido"
+msgstr "Prioridad '%s' no es válida (<0-%ld>)"
 
 #: ../clients/common/nm-meta-setting-desc.c:345
 #, c-format
@@ -4210,14 +4213,14 @@ msgid "file '%s' contains non-valid utf-8"
 msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:365
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not contain a valid PAC Script"
-msgstr "'%s' no es una dirección MAC válida"
+msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:368
-#, fuzzy, c-format
+#, c-format
 msgid "Not a valid PAC Script"
-msgstr "secretos VPN no válidos"
+msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:422
 #, c-format
@@ -4230,9 +4233,9 @@ msgid "team config file '%s' contains non-valid utf-8"
 msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:441
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not contain a valid team configuration"
-msgstr "'%s=%s' no es una configuración válida para '%s'"
+msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:444
 #, c-format
@@ -4246,7 +4249,7 @@ msgstr "(predeterminado)"
 
 #: ../clients/common/nm-meta-setting-desc.c:678
 msgid "auto"
-msgstr ""
+msgstr "auto"
 
 #: ../clients/common/nm-meta-setting-desc.c:826
 #, c-format
@@ -4269,19 +4272,21 @@ msgid "'%s' is out of range [0, %u]"
 msgstr "'%d' valor está fuera de rango <0-3>"
 
 #: ../clients/common/nm-meta-setting-desc.c:1051
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid Ethernet MAC"
-msgstr "'%s' no es un valor de puerto Ethernet válido"
+msgstr "'%s' no es un Ethernet MAC válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:1070
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid flag number; use <0-%d>"
-msgstr "'%s' no es una banda válida"
+msgstr "'%s'  no es un número de indicador válido; use <0-%d>"
 
 #: ../clients/common/nm-meta-setting-desc.c:1084
-#, c-format
+#, fuzzy, c-format
 msgid "'%s' sum is higher than all flags => all flags set"
 msgstr ""
+"Advertencia: '%s' suma no es mayor que todos los indicadores => todos los "
+"indicadores están establecidos\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:1188
 #, fuzzy, c-format
@@ -4297,137 +4302,139 @@ msgstr "La opción '%s' es inválida,  use uno de [%s]"
 #: ../clients/common/nm-meta-setting-desc.c:1316
 #, c-format
 msgid "%d (key)"
-msgstr ""
+msgstr "%d (llave)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1318
 #, c-format
 msgid "%d (passphrase)"
-msgstr ""
+msgstr "%d (frase de paso)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1321
 #: ../clients/common/nm-meta-setting-desc.c:1410
-#, fuzzy, c-format
+#, c-format
 msgid "%d (unknown)"
-msgstr "(desconocido)"
+msgstr "%d (desconocido)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1353
 msgid "0 (NONE)"
-msgstr ""
+msgstr "0 (NONE)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1359
 msgid "REORDER_HEADERS, "
-msgstr ""
+msgstr "REORDENAR_ENCABEZADOS, "
 
 #: ../clients/common/nm-meta-setting-desc.c:1361
 msgid "GVRP, "
-msgstr ""
+msgstr "GVRP, "
 
 #: ../clients/common/nm-meta-setting-desc.c:1363
 msgid "LOOSE_BINDING, "
-msgstr ""
+msgstr "DESATAR_VINCULACIÓN, "
 
 #: ../clients/common/nm-meta-setting-desc.c:1365
 msgid "MVRP, "
-msgstr ""
+msgstr "MVRP, "
 
 #: ../clients/common/nm-meta-setting-desc.c:1404
-#, fuzzy, c-format
+#, c-format
 msgid "%d (disabled)"
-msgstr "desactivado"
+msgstr "%d (inhabilitado)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1406
 #, c-format
 msgid "%d (enabled, prefer public IP)"
-msgstr ""
+msgstr "%d (habilitado, prefiere IP pública)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1408
 #, c-format
 msgid "%d (enabled, prefer temporary IP)"
-msgstr ""
+msgstr "%d (inhabilitado, prefiere temporal IP)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1423
-#, fuzzy
 msgid "0 (none)"
-msgstr "(ninguno)"
+msgstr "0 (none)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1429
 msgid "agent-owned, "
-msgstr ""
+msgstr "agente-adquirido, "
 
 #: ../clients/common/nm-meta-setting-desc.c:1431
 msgid "not saved, "
-msgstr ""
+msgstr "sin guardar,"
 
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
 #: ../clients/common/nm-meta-setting-desc.c:1433
-#, fuzzy
 msgid "not required, "
-msgstr "Se requiere código PIN"
+msgstr "no requerido"
 
 #: ../clients/common/nm-meta-setting-desc.c:1495
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid; use <option>=<value>"
-msgstr "'%s' no es un valor duplex válido"
+msgstr "'%s' no es válido; use <option>=<value>"
 
 #: ../clients/common/nm-meta-setting-desc.c:1537
 msgid "no item to remove"
-msgstr ""
+msgstr "No se encontró ningún elemento para eliminar"
 
 #: ../clients/common/nm-meta-setting-desc.c:1541
-#, fuzzy, c-format
+#, c-format
 msgid "index '%d' is not in range <0-%d>"
-msgstr "El valor '%d' está fuera del rango <%d-%d>"
+msgstr "index '%d' no está en el rango <0-%d>"
 
 #: ../clients/common/nm-meta-setting-desc.c:1556
-#, fuzzy, c-format
+#, c-format
 msgid "invalid option '%s'"
-msgstr "Nombre de parámetro inválido '%s' "
+msgstr "Opción inválida: '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:1558
-#, fuzzy
 msgid "missing option"
-msgstr "Falta parámetro"
+msgstr "Falta opción"
 
 #: ../clients/common/nm-meta-setting-desc.c:1582
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid MAC"
-msgstr "'%s' no es una dirección MAC válida"
+msgstr "'%s' no es un MAC válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:1612
 #: ../clients/common/nm-meta-setting-desc.c:1708
 #: ../clients/common/nm-meta-setting-desc.c:4233
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid"
-msgstr "'%s' no es un UUID válido"
+msgstr "'%s' no es válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:1652
-#, fuzzy, c-format
+#, c-format
 msgid "'%u' flags are not valid; use combination of %s"
-msgstr "'%s=%s' no es una configuración válida para '%s'"
+msgstr "'%u' indicadores no son válidos; use la combinación de %s"
 
 #: ../clients/common/nm-meta-setting-desc.c:1688
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid number (or out of range)"
-msgstr "'%s' no es un valor de puerto Ethernet válido"
+msgstr "'%s' no es un número válido (o está fuera de rango)"
 
 #: ../clients/common/nm-meta-setting-desc.c:1803
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid hex character"
-msgstr "'%s' no es un valor duplex válido"
+msgstr "'%s' no es un caracter hex"
 
 #: ../clients/common/nm-meta-setting-desc.c:2083
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain EAP method '%s'"
-msgstr "La propiedad no puede cambiarse"
+msgstr "La propiedad no contiene el método EAP '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:2106
 #, c-format
 msgid "the property doesn't contain alternative subject match '%s'"
 msgstr ""
+"la propiedad no contiene correspondencia alternativa con '%s'\n"
+"\n"
+"    "
 
 #: ../clients/common/nm-meta-setting-desc.c:2132
 #, c-format
 msgid "the property doesn't contain \"phase2\" alternative subject match '%s'"
 msgstr ""
+"la propiedad no contiene  correspondencia de alternativa '%s' de \"phase2\" "
 
 #: ../clients/common/nm-meta-setting-desc.c:2253
 #, c-format
@@ -4446,12 +4453,25 @@ msgid ""
 "\n"
 "Example: mode=2,miimon=120\n"
 msgstr ""
+"Ingresar una lista de opciones formateadas así:\n"
+"  option = <value>, option = <value>,... \n"
+"Valid options are: %s\n"
+"'mode' can be provided as a name or a number:\n"
+"balance-rr    = 0\n"
+"active-backup = 1\n"
+"balance-xor   = 2\n"
+"broadcast     = 3\n"
+"802.3ad       = 4\n"
+"balance-tlb   = 5\n"
+"balance-alb   = 6\n"
+"\n"
+"Ejemplo: mode=2,miimon=120\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:2289
 #: ../clients/common/nm-meta-setting-desc.c:3132
-#, fuzzy, c-format
+#, c-format
 msgid "%d (default)"
-msgstr "(predeterminado)"
+msgstr "%d (predeterminado)"
 
 #: ../clients/common/nm-meta-setting-desc.c:2292
 #, c-format
@@ -4468,17 +4488,17 @@ msgstr ""
 #: ../clients/common/nm-meta-setting-desc.c:2342
 #, fuzzy, c-format
 msgid "Can not change the connection type"
-msgstr "No se conoce o maneja tipo de conexión Bluetooth."
+msgstr "Ingrese el tipo de conexión:"
 
 #: ../clients/common/nm-meta-setting-desc.c:2444
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain permission '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "la propiedad no contiene permiso '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:2465
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid master; use ifname or connection UUID"
-msgstr "'%s' no es un nombre de interfaz válido para la opción '%s'"
+msgstr "'%s' no es un maestro válido; use ifname o UUID de conexión"
 
 #: ../clients/common/nm-meta-setting-desc.c:2560
 #, fuzzy, c-format
@@ -4486,80 +4506,81 @@ msgid "the value '%s' is not a valid UUID"
 msgstr "'%s' no es un UUID válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:2567
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain UUID '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "la propiedad no contiene UUID '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:2634
-#, fuzzy
 msgid "0 (disabled)"
-msgstr "desactivado"
+msgstr "0 (inhabilitado)"
 
 #: ../clients/common/nm-meta-setting-desc.c:2640
-#, fuzzy
 msgid "enabled, "
-msgstr "activado"
+msgstr "habilitado,"
 
 #: ../clients/common/nm-meta-setting-desc.c:2642
 msgid "advertise, "
-msgstr ""
+msgstr "promover, "
 
 #: ../clients/common/nm-meta-setting-desc.c:2644
 msgid "willing, "
-msgstr ""
+msgstr "dispuesto, "
 
 #: ../clients/common/nm-meta-setting-desc.c:2764
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid DCB flag"
-msgstr "'%s' no es un UUID válido"
+msgstr "'%s' no es un indicador DCB válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:2794
 msgid "must contain 8 comma-separated numbers"
-msgstr ""
+msgstr "debe contener 8 números separados por comas"
 
 #: ../clients/common/nm-meta-setting-desc.c:2810
 #, c-format
 msgid "'%s' not a number between 0 and %u (inclusive) or %u"
-msgstr ""
+msgstr "'%s' no un número entre 0 y %u (inclusive) o %u"
 
 #: ../clients/common/nm-meta-setting-desc.c:2813
 #, c-format
 msgid "'%s' not a number between 0 and %u (inclusive)"
-msgstr ""
+msgstr "'%s' no es un número entre 0 y %u (inclusive)"
 
 #: ../clients/common/nm-meta-setting-desc.c:2834
-#, c-format
+#, fuzzy, c-format
 msgid "changes will have no effect until '%s' includes 1 (enabled)"
 msgstr ""
+"Advertencia: los cambios no tendrán efecto sino hasta que '%s' incluya 1 "
+"(habilitado)\n"
+"\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:2889
 #, c-format
 msgid "bandwidth percentages must total 100%%"
-msgstr ""
+msgstr "Los porcentajes de ancho de banda deben ser en total 100%%"
 
 #: ../clients/common/nm-meta-setting-desc.c:2962
 #: ../clients/common/nm-meta-setting-desc.c:2968
 msgid "SIM operator ID must be a 5 or 6 number MCCMNC code"
-msgstr ""
+msgstr "ID de operador SIM debe ser un código MCCMNC número 5 o 6 "
 
 #: ../clients/common/nm-meta-setting-desc.c:2992
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid IBoIP P_Key"
-msgstr "'%s' no es una dirección IP válida"
+msgstr "'%s' no es una llave IBOIP P_key válida"
 
+# auto translated by TM merge from project: Skynet topics, version: 1, DocId: 4680-83989
 #: ../clients/common/nm-meta-setting-desc.c:3015
-#, fuzzy
 msgid "default"
-msgstr "(predeterminado)"
+msgstr "predeterminado"
 
 #: ../clients/common/nm-meta-setting-desc.c:3134
 #, c-format
 msgid "%d (off)"
-msgstr ""
+msgstr "%d (off)"
 
 #: ../clients/common/nm-meta-setting-desc.c:3171
 #: ../clients/common/nm-meta-setting-desc.c:3190
-#, fuzzy, c-format
+#, c-format
 msgid "invalid IPv4 address '%s'"
 msgstr "Formato de dirección IPv4 inválido '%s'"
 
@@ -4567,43 +4588,43 @@ msgstr "Formato de dirección IPv4 inválido '%s'"
 #: ../clients/common/nm-meta-setting-desc.c:3450
 #, c-format
 msgid "the property doesn't contain DNS server '%s'"
-msgstr ""
+msgstr "la propiedad no contiene servidor DNS '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3236
 #: ../clients/common/nm-meta-setting-desc.c:3490
 #, c-format
 msgid "the property doesn't contain DNS search domain '%s'"
-msgstr ""
+msgstr "la propiedad no contiene dominio de búsqueda DNS '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3273
 #: ../clients/common/nm-meta-setting-desc.c:3527
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain DNS option '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "la propiedad no contiene la opción DNS '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3316
 #: ../clients/common/nm-meta-setting-desc.c:3569
 #, c-format
 msgid "the property doesn't contain IP address '%s'"
-msgstr ""
+msgstr "La propiedad no puede contiene la dirección IP '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3336
 #: ../clients/common/nm-meta-setting-desc.c:3588
-#, fuzzy, c-format
+#, c-format
 msgid "invalid gateway address '%s'"
-msgstr "Formato de dirección IPv4 inválido '%s'"
+msgstr "Dirección de puerta de enlace inválida '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3375
 #: ../clients/common/nm-meta-setting-desc.c:3629
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain route '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "La propiedad no puede contiene la ruta '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3425
 #: ../clients/common/nm-meta-setting-desc.c:3444
-#, fuzzy, c-format
+#, c-format
 msgid "invalid IPv6 address '%s'"
-msgstr "Dirección IPv6 inválida '%s'"
+msgstr "Dirección IPv4 inválida '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3647
 #: ../libnm-core/nm-setting-gsm.c:381 ../libnm-util/nm-setting-gsm.c:364
@@ -4612,39 +4633,41 @@ msgid "'%s' is not a number"
 msgstr "'%s' no es un número "
 
 #: ../clients/common/nm-meta-setting-desc.c:3654
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid; use 0, 1, or 2"
-msgstr "'%s' no es un valor váldo para '%s'"
+msgstr "'%s' no es válido; use 0, 1, o 2"
 
 #: ../clients/common/nm-meta-setting-desc.c:3688
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid channel; use <1-13>"
-msgstr "'%d' no es un canal válido"
+msgstr "'%s'  no es un canal válido; use <1-13>"
 
 #: ../clients/common/nm-meta-setting-desc.c:3794
-#, c-format
+#, fuzzy, c-format
 msgid "only one mapping at a time is supported; taking the first one (%s)"
 msgstr ""
+"Advertencia: solamente un mapeo a la vez recibe soporte; tomando el primero  "
+"(%s)\n"
+"\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:3802
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain mapping '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "la propiedad no contiene mapeo '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3810
-#, fuzzy
 msgid "no priority to remove"
-msgstr "Ruta de prioridad para IPv4."
+msgstr "no hay prioridad para retirar"
 
 #: ../clients/common/nm-meta-setting-desc.c:3814
-#, fuzzy, c-format
+#, c-format
 msgid "index '%d' is not in the range of <0-%d>"
-msgstr "El valor '%d' está fuera del rango <%d-%d>"
+msgstr "index '%d' no está en el rango de <0-%d>"
 
 #: ../clients/common/nm-meta-setting-desc.c:3883
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' cannot be empty"
-msgstr "opción '%s' está vacía"
+msgstr "'%s'no puede estar vacía"
 
 #: ../clients/common/nm-meta-setting-desc.c:3922
 #: ../clients/common/nm-meta-setting-desc.c:4055
@@ -4660,17 +4683,17 @@ msgstr "'%s' no es una dirección MAC válida"
 #: ../clients/common/nm-meta-setting-desc.c:4061
 #, c-format
 msgid "the property doesn't contain MAC address '%s'"
-msgstr ""
+msgstr "la propiedad no contiene la dirección MAC '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:3946
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not valid; 2 or 3 strings should be provided"
-msgstr "'%s' no es un valor válido para propiedad"
+msgstr "'%s' no es válido; se deben proporcionar 2 o 3 cadenas "
 
 #: ../clients/common/nm-meta-setting-desc.c:3962
 #, c-format
 msgid "'%s' string value should consist of 1 - 199 characters"
-msgstr ""
+msgstr "el valor de la cadena '%s' debe constar entre 1 y  199 caracteres"
 
 #: ../clients/common/nm-meta-setting-desc.c:3994
 #, c-format
@@ -4679,23 +4702,26 @@ msgid ""
 "  option = <value>, option = <value>,...\n"
 "Valid options are: %s\n"
 msgstr ""
+"Ingresar una lista de opciones S/390 formateadas como:\n"
+"  opción = <value>, option = <value>,...\n"
+"Las opciones válidas son: %s\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4028
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid channel"
-msgstr "'%d' no es un canal válido"
+msgstr "'%s' no es un canal válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:4034
-#, fuzzy, c-format
+#, c-format
 msgid "'%ld' is not a valid channel"
-msgstr "'%d' no es un canal válido"
+msgstr "'%ld' no es un canal válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:4133
 #: ../clients/common/nm-meta-setting-desc.c:4169
 #: ../clients/common/nm-meta-setting-desc.c:4205
-#, fuzzy, c-format
+#, c-format
 msgid "the property doesn't contain protocol '%s'"
-msgstr "La propiedad debe contener únicamente dígitos"
+msgstr "la propiedad no contiene el protocolo '%s'"
 
 #: ../clients/common/nm-meta-setting-desc.c:4242
 #, c-format
@@ -4703,30 +4729,35 @@ msgid ""
 "'%s' not compatible with %s '%s', please change the key or set the right %s "
 "first."
 msgstr ""
+"'%s' no es compatible con %s '%s', por favor cambie la llave o establezca el "
+"derecho  %s primero."
 
 #: ../clients/common/nm-meta-setting-desc.c:4252
-#, c-format
+#, fuzzy, c-format
 msgid "WEP key is guessed to be of '%s'"
-msgstr ""
+msgstr "Clave WEP se cree que sea de '%s'\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4257
-#, c-format
+#, fuzzy, c-format
 msgid "WEP key index set to '%d'"
-msgstr ""
+msgstr "El índice de llave WEP se estableció a  '%d'\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4296
-#, c-format
+#, fuzzy, c-format
 msgid "'%s' is not compatible with '%s' type, please change or delete the key."
 msgstr ""
+"Advertencia: '%s' no es compatible con  el tipo '%s', por favor cambie o "
+"borre la clave.\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4306
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid PSK"
-msgstr "'%s' no es un WPA PSK válido"
+msgstr "'%s' no es un PSK válido"
 
 #: ../clients/common/nm-meta-setting-desc.c:4338
+#, fuzzy
 msgid "Bonding primary interface [none]"
-msgstr ""
+msgstr "Interfaz de vinculación primaria [none]: "
 
 #. this is a virtual property, only needed during "ask" mode.
 #: ../clients/common/nm-meta-setting-desc.c:4345
@@ -4735,26 +4766,29 @@ msgid "Bonding monitoring mode"
 msgstr "Enlace de monitorización"
 
 #: ../clients/common/nm-meta-setting-desc.c:4354
+#, fuzzy
 msgid "Bonding miimon [100]"
-msgstr ""
+msgstr "Vinculación miimon [100]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4362
 #, fuzzy
 msgid "Bonding downdelay [0]"
-msgstr "Retraso de 'Link down'"
+msgstr "Vinculación downdelay [0]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4370
 #, fuzzy
 msgid "Bonding updelay [0]"
-msgstr "Retraso de 'link up'"
+msgstr "Vinculación updelay [0]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4378
+#, fuzzy
 msgid "Bonding arp-interval [0]"
-msgstr ""
+msgstr "Vinculación arp-interval [0]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4386
+#, fuzzy
 msgid "Bonding arp-ip-target [none]"
-msgstr ""
+msgstr "Vinculación arp-ip-target [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4394
 msgid "LACP rate ('slow' or 'fast') [slow]"
@@ -4774,6 +4808,13 @@ msgid ""
 "\"roundrobin\"}, \"ports\": {\"eth1\": {}, \"eth2\": {}} }\n"
 "          set team.config /etc/my-team.conf\n"
 msgstr ""
+"nmcli puede aceptar tanto los datos de configuración de JSON como el nombre "
+"de archivo que contiene la configuración. En el último caso el archivo se "
+"lee y el contenido es puesto dentro de esta propiedad.\n"
+"\n"
+"Ejemplos: set team.config { \"device\": \"team0\", \"runner\": {\"name\": "
+"\"roundrobin\"}, \"ports\": {\"eth1\": {}, \"eth2\": {}} }\n"
+"          set team.config /etc/my-team.conf\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4541
 msgid ""
@@ -4782,6 +4823,12 @@ msgid ""
 "Note that nmcli does not support specifying certificates as raw blob data.\n"
 "Example: /home/cimrman/cacert.crt\n"
 msgstr ""
+"Ingrese la ruta del archivo al certificado CA (opcionalmente prefijado con "
+"el archivo://).\n"
+"  [file://]<file path>\n"
+"Observe que nmcli no soporta certificados que se especifican como datos en "
+"crudo o blobs.\n"
+"Ejemplo: /home/cimrman/cacert.crt\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4575
 msgid ""
@@ -4790,6 +4837,12 @@ msgid ""
 "Note that nmcli does not support specifying certificates as raw blob data.\n"
 "Example: /home/cimrman/jara.crt\n"
 msgstr ""
+"Ingrese la ruta del archivo al certificado del cliente (opcionalmente "
+"prefijado con el archivo://).\n"
+"  [file://]<file path>\n"
+"Observe que nmcli no soporta certificados que se especifican como datos en "
+"crudo o blobs.\n"
+"Ejemplo: /home/cimrman/jara.crt\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4632
 msgid ""
@@ -4800,6 +4853,12 @@ msgid ""
 "Note that nmcli does not support specifying certificates as raw blob data.\n"
 "Example: /home/cimrman/ca-zweite-phase.crt\n"
 msgstr ""
+"Ingrese la ruta del archivo al certificado CA para autenticación interna "
+"(opcionalmente prefijado con el archivo://).\n"
+"  [file://]<file path>\n"
+"Observe que nmcli no soporta certificados que se especifican como datos en "
+"crudo o blobs.\n"
+"Ejemplo:/home/cimrman/ca-zweite-phase.crt\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4667
 msgid ""
@@ -4810,6 +4869,12 @@ msgid ""
 "Note that nmcli does not support specifying certificates as raw blob data.\n"
 "Example: /home/cimrman/jara-zweite-phase.crt\n"
 msgstr ""
+"Ingrese la ruta al certificado de cliente para autenticación interna "
+"(opcionalmente prefijado con el archivo://).\n"
+"  [file://]<file path>\n"
+"Observe que nmcli no soporta certificados que se especifican como datos en "
+"crudo o blobs.\n"
+"Ejemplo: /home/cimrman/jara-zweite-phase.crt\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4694
 msgid ""
@@ -4823,6 +4888,15 @@ msgid ""
 "Examples: ab0455a6ea3a74C2\n"
 "          ab 4 55 0xa6 ea 3a 74 C2\n"
 msgstr ""
+"Ingrese bytes como una lista de valores hexadecimales.\n"
+"Se aceptan dos formatos:\n"
+"(a) una cadena de dígitos hexadecimales, donde cada dos dígitos representa "
+"un byte\n"
+"(b) lista de bytes separada por espacio escrita como dígitos hexadecimales "
+"(con prefijo opcional 0x/0X, y un 0 inicial opcional).\n"
+"\n"
+"Ejemplos: ab0455a6ea3a74C2\n"
+"          ab 4 55 0xa6 ea 3a 74 C2\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:4711
 #: ../clients/common/nm-meta-setting-desc.c:4729
@@ -4832,6 +4906,12 @@ msgid ""
 "Note that nmcli does not support specifying private key as raw blob data.\n"
 "Example: /home/cimrman/jara-priv-key Dardanely\n"
 msgstr ""
+"Ingrese ruta a una clave y contraseña privadas (si aún no lo ha hecho):\n"
+"  <file path> [<password>]\n"
+"Observe que nmcli no soporta certificados que se especifican como datos en "
+"crudo o "
+"blobs.                                                                                                                                                                                                        "
+"Ejemplo: /home/cimrman/jara-priv-key Dardanely\n"
 
 #. TTLS and PEAP are actually much more complicated, but this complication
 #. * is not visible here since we only care about phase2 authentication
@@ -4850,61 +4930,65 @@ msgstr "Nombre de usuario"
 #: ../clients/common/nm-meta-setting-desc.c:5788
 #, fuzzy
 msgid "Password [none]"
-msgstr "Contraseña:"
+msgstr "Contraseña [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4821
 #, fuzzy
 msgid "Bluetooth device address"
-msgstr "No es una dirección MAC válida"
+msgstr "Dirección de dispositivo Bluetooth:"
 
 #: ../clients/common/nm-meta-setting-desc.c:4865
 #: ../clients/common/nm-meta-setting-desc.c:5275
 #: ../clients/common/nm-meta-setting-desc.c:6213
 #: ../clients/common/nm-meta-setting-desc.c:6251
 #: ../clients/common/nm-meta-setting-desc.c:6388
+#, fuzzy
 msgid "MAC [none]"
-msgstr ""
+msgstr "MAC [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4871
 #, fuzzy
 msgid "Enable STP [no]"
-msgstr "Habilitar snooping IGMP"
+msgstr "Habilitar STP (si o no) [yes]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4877
+#, fuzzy
 msgid "STP priority [32768]"
-msgstr ""
+msgstr "Prioridad STP [128]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4883
 #, fuzzy
 msgid "Forward delay [15]"
-msgstr "Demora de envío"
+msgstr "Demora de reenvío [15]:"
 
 #: ../clients/common/nm-meta-setting-desc.c:4889
 #, fuzzy
 msgid "Hello time [2]"
-msgstr "Hello time"
+msgstr "Hello time [2]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4895
 #, fuzzy
 msgid "Max age [20]"
-msgstr "Edad máx"
+msgstr "Edad máxima [20]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4901
+#, fuzzy
 msgid "MAC address ageing time [300]"
-msgstr ""
+msgstr "Tiempo de envejecimiento de direción MAC  [300]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4907
-#, fuzzy
 msgid "Enable IGMP snooping [no]"
-msgstr "Habilitar snooping IGMP"
+msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:4919
+#, fuzzy
 msgid "Bridge port priority [32]"
-msgstr ""
+msgstr "Prioridad de puerto de puente [32]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4925
+#, fuzzy
 msgid "Bridge port STP path cost [100]"
-msgstr ""
+msgstr "Costo de ruta STP puerto de puente [100]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:4931
 #, fuzzy
@@ -4916,7 +5000,7 @@ msgstr "Modo de Hairpin"
 #: ../clients/common/nm-meta-setting-desc.c:6103
 #, fuzzy
 msgid "Username [none]"
-msgstr "Nombre de usuario"
+msgstr "Nombre de usuario [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5029
 msgid ""
@@ -4927,6 +5011,12 @@ msgid ""
 "\n"
 "Example: alice bob charlie\n"
 msgstr ""
+"Ingresar una lista de permisos de usuario. Esta es una lista de nombres de "
+"usuario formateada como:\n"
+"  [user:]<user name 1>, [user:]<user name 2>,...\n"
+"Los elementos pueden separarse por comas o espacios.\n"
+"\n"
+"Ejemplo: alice bob charlie\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5069
 msgid ""
@@ -4940,6 +5030,15 @@ msgid ""
 "\n"
 "Example: private-openvpn, fe6ba5d8-c2fc-4aae-b2e3-97efddd8d9a7\n"
 msgstr ""
+"Ingrese la conexión secundaria que debe ser activada cuando esta conexión "
+"esté activada. Las conexiones pueden ser especificadas ya sea mediante un  "
+"UUID o ID (nombre) nmcli de forma transparentes traduce nombres a las UUID. "
+"Observe que NetworkManager únicamente soporta en el momento  VPN como "
+"conexiones secundarias. Los ítems pueden ir separados por comas o "
+"espacios..\n"
+"\n"
+"Ejemplo: private-openvpn, fe6ba5d8-c2fc-4aae-b2e3-97efddd8d9a7\n"
+"\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5086
 msgid ""
@@ -4949,26 +5048,34 @@ msgid ""
 "'false','no','off' to set the connection as not metered\n"
 "'unknown' to let NetworkManager choose a value using some heuristics\n"
 msgstr ""
+"Ingrese un valor que indique si la conexión está sujeta a cuota de datos, "
+"costo de uso u otras limitaciones. Las opciones aceptadas son:\n"
+"'true','yes','on' para establecer la conexión como medida\n"
+"'false','no','off' para establecer la conexión como medida\n"
+"'unknown' para permitir que NetworkManager elija un valor mediante "
+"heurística\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5232
 #, fuzzy
 msgid "APN"
-msgstr "VPN"
+msgstr "AP"
 
 #: ../clients/common/nm-meta-setting-desc.c:5284
 #: ../clients/common/nm-meta-setting-desc.c:6276
 #: ../clients/common/nm-meta-setting-desc.c:6422
+#, fuzzy
 msgid "MTU [auto]"
-msgstr ""
+msgstr "MTU [auto]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5303
+#, fuzzy
 msgid "P_KEY [none]"
-msgstr ""
+msgstr "P_KEY [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5312
 #, fuzzy
 msgid "Parent interface [none]"
-msgstr "Interfaz a administrar"
+msgstr "Interfaz principal [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5335
 msgid ""
@@ -4976,10 +5083,14 @@ msgid ""
 "\n"
 "Example: 8.8.8.8, 8.8.4.4\n"
 msgstr ""
+"Ingrese una lista de direciones IPv4 de servidores DNS.\n"
+"\n"
+"Ejemplo: 8.8.8.8, 8.8.4.4\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5367
+#, fuzzy
 msgid "IPv4 address (IP[/plen]) [none]"
-msgstr ""
+msgstr "Dirección IPv4 (IP[/plen] [gateway]) [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5369
 msgid ""
@@ -4989,10 +5100,16 @@ msgid ""
 "\n"
 "Example: 192.168.1.5/24, 10.0.0.11/24\n"
 msgstr ""
+"Ingrese una lista de direcciones IPv4 formateadas así:\n"
+"    ip[/prefix], ip[/prefix],...\n"
+"Falta prefijo aparece como prefijo de 32.\n"
+"\n"
+"Ejemplo: 192.168.1.5/24, 10.0.0.11/24\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5382
+#, fuzzy
 msgid "IPv4 gateway [none]"
-msgstr ""
+msgstr "Dirección IPv4 (IP[/plen] [gateway]) [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5390
 msgid ""
@@ -5006,6 +5123,15 @@ msgid ""
 "Examples: 192.168.2.0/24 192.168.2.1 3, 10.1.0.0/16 10.0.0.254\n"
 "          10.1.2.0/24\n"
 msgstr ""
+"Ingrese una lista de rutas IPv4 formateadas así:\n"
+"  ip[/prefix] [next-hop] [metric],...\n"
+"\n"
+"Missing prefix is regarded as a prefix of 32.\n"
+"Missing next-hop is regarded as 0.0.0.0.\n"
+"Missing metric means default (NM/kernel will set a default value).\n"
+"\n"
+"Ejemplos: 192.168.2.0/24 192.168.2.1 3, 10.1.0.0/16 10.0.0.254\n"
+"          10.1.2.0/24\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5456
 msgid ""
@@ -5018,10 +5144,20 @@ msgid ""
 "\n"
 "Example: 2607:f0d0:1002:51::4, 2607:f0d0:1002:51::1\n"
 msgstr ""
+"Ingrese una lista de direcciones IPv6 de servidores DNS.  Si el métodos de "
+"configuración IPv6 es 'auto' estos servidores DNS se añaden a los que son "
+"retornados por configuración automática.  Los servidores DNS no pueden ser "
+"utilizados con los métodos de configuración IPv6 'compartidos' o 'enlace "
+"local', ya que hay no una red  principal. En los otros métodos de "
+"configuración IPv6, estos servidores DNS sirven como servidores como los "
+"únicos servidores DNS para esta conexión.\n"
+"\n"
+"Ejemplo: 2607:f0d0:1002:51::4, 2607:f0d0:1002:51::1\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5494
+#, fuzzy
 msgid "IPv6 address (IP[/plen]) [none]"
-msgstr ""
+msgstr "Dirección IPv6 (IP[/plen] [gateway]) [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5496
 msgid ""
@@ -5031,10 +5167,16 @@ msgid ""
 "\n"
 "Example: 2607:f0d0:1002:51::4/64, 1050:0:0:0:5:600:300c:326b\n"
 msgstr ""
+"Ingrese una lista de direcciones IPv6 formateadas así:\n"
+"  ip[/prefix], ip[/prefix],...\n"
+"Prefijo faltante aparece como prefijo de 128.\n"
+".\n"
+"Ejemplo:  2607:f0d0:1002:51::4/64, 1050:0:0:0:5:600:300c:326b\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5509
+#, fuzzy
 msgid "IPv6 gateway [none]"
-msgstr ""
+msgstr "Dirección IPv6 (IP[/plen] [gateway]) [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5517
 msgid ""
@@ -5049,15 +5191,28 @@ msgid ""
 "db8:beef::3 2\n"
 "          abbe::/64 55\n"
 msgstr ""
+"Ingrese una lista de rutas IPv6 formateadas como:\n"
+"  ip/[prefix] next-hop [metric],...,\n"
+"\n"
+"El prefijo faltante se visualiza como un prefijo de 128.\n"
+"El next-hop faltante se visualiza como \"::\".\n"
+"La métrica faltante significa predeterminado ( NM/kernel establecerá un "
+"valor predeterminado).\n"
+"\n"
+"Ejemplos: 2001:db8:beef:2::/64 2001:db8:beef::2, 2001:db8:beef:3::/64 2001:"
+"db8:beef::3 2\n"
+"          abbe::/64 55\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:5595
 #: ../clients/common/nm-meta-setting-desc.c:6136
+#, fuzzy
 msgid "Parent device [none]"
-msgstr ""
+msgstr "Interfaz principal [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5601
+#, fuzzy
 msgid "Local endpoint [none]"
-msgstr ""
+msgstr "Interfaz principal [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5608
 #: ../clients/common/nm-meta-setting-desc.c:6156
@@ -5066,9 +5221,8 @@ msgid "Remote"
 msgstr "Retirar"
 
 #: ../clients/common/nm-meta-setting-desc.c:5645
-#, fuzzy
 msgid "MACsec parent device or connection UUID"
-msgstr "no se encontró dispositivo para conexión «%s»"
+msgstr ""
 
 #: ../clients/common/nm-meta-setting-desc.c:5666
 msgid "Enable encryption [yes]"
@@ -5090,7 +5244,7 @@ msgstr ""
 #: ../clients/common/nm-meta-setting-desc.c:5711
 #, fuzzy
 msgid "MACVLAN parent device or connection UUID"
-msgstr "Conexión MACVLAN"
+msgstr "Dispositivo principal VLAN o UUID de conexión: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5732
 msgid "Tap [no]"
@@ -5105,21 +5259,22 @@ msgstr "SSID"
 #: ../clients/common/nm-meta-setting-desc.c:5754
 #, fuzzy
 msgid "OLPC Mesh channel [1]"
-msgstr "OLPC Mesh"
+msgstr "Canal OLPC Mesh [1]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5763
+#, fuzzy
 msgid "DHCP anycast MAC address [none]"
-msgstr ""
+msgstr "Dirección MAC DHCP anycast [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5775
 #, fuzzy
 msgid "Service [none]"
-msgstr "Servicio"
+msgstr "Servicio [ninguno]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:5782
 #, fuzzy
 msgid "PPPoE username"
-msgstr "Nombre de usuario"
+msgstr "Nombre de usuario PPPoE"
 
 #: ../clients/common/nm-meta-setting-desc.c:5881
 msgid "Browser only [no]"
@@ -5137,20 +5292,22 @@ msgstr ""
 #: ../clients/common/nm-meta-setting-desc.c:5924
 #, fuzzy
 msgid "Team JSON configuration [none]"
-msgstr "Configuración JSON"
+msgstr "Configuración de equipo JSON [ninguna]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6006
+#, fuzzy
 msgid "User ID [none]"
-msgstr ""
+msgstr "Nombre de usuario [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6012
+#, fuzzy
 msgid "Group ID [none]"
-msgstr ""
+msgstr "MAC [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6018
 #, fuzzy
 msgid "Enable PI [no]"
-msgstr "Habilitar snooping IGMP"
+msgstr "Habilitar STP (si o no) [yes]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6024
 msgid "Enable VNET header [no]"
@@ -5163,32 +5320,37 @@ msgstr ""
 #: ../clients/common/nm-meta-setting-desc.c:6043
 #, fuzzy
 msgid "VLAN parent device or connection UUID"
-msgstr "no se encontró dispositivo para conexión «%s»"
+msgstr "Dispositivo principal VLAN o UUID de conexión: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6050
+#, fuzzy
 msgid "VLAN ID (<0-4094>)"
-msgstr ""
+msgstr "ID de VLAN <0-4095>: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6056
+#, fuzzy
 msgid "VLAN flags (<0-7>) [none]"
-msgstr ""
+msgstr "Indicadores VLAN (<0-7>) [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6065
+#, fuzzy
 msgid "Ingress priority maps [none]"
-msgstr ""
+msgstr "Mapas de prioridad de ingreso [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6075
+#, fuzzy
 msgid "Egress priority maps [none]"
-msgstr ""
+msgstr "Mapas de prioridad de egreso [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6143
 #, fuzzy
 msgid "VXLAN ID"
-msgstr "VXLAN"
+msgstr "ID de VLAN <0-4095>: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6149
+#, fuzzy
 msgid "Local address [none]"
-msgstr ""
+msgstr "Dirección MAC DHCP anycast [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6162
 msgid "Minimum source port [0]"
@@ -5204,14 +5366,15 @@ msgid "Destination port [8472]"
 msgstr "Destino"
 
 #: ../clients/common/nm-meta-setting-desc.c:6220
+#, fuzzy
 msgid "WiMAX NSP name"
-msgstr ""
+msgstr "Nombre NSP WiMAX: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6257
 #: ../clients/common/nm-meta-setting-desc.c:6393
 #, fuzzy
 msgid "Cloned MAC [none]"
-msgstr "Dirección MAC clonada"
+msgstr "MAC clonada [none]: "
 
 #: ../clients/common/nm-meta-setting-desc.c:6284
 msgid ""
@@ -5219,12 +5382,17 @@ msgid ""
 "\n"
 "Example: 0.0.0e20 0.0.0e21 0.0.0e22\n"
 msgstr ""
+"Ingrese una lista de subcanales (separados por espacio o coma).\n"
+"\n"
+"Ejemplo: 0.0.0e20 0.0.0e21 0.0.0e22\n"
 
 #: ../clients/common/nm-meta-setting-desc.c:6538
 msgid ""
 "Enter the type of WEP keys. The accepted values are: 0 or unknown, 1 or key, "
 "and 2 or passphrase.\n"
 msgstr ""
+"Ingrese e tipo de claves WEP. Los valores aceptados son: 0 o Desconocido, 1 "
+"o clave y 2 o frase de paso..\n"
 
 #. ***************************************************************************
 #: ../clients/common/nm-meta-setting-desc.c:6708
@@ -5239,19 +5407,19 @@ msgstr "Conexión ADSL"
 #: ../clients/common/nm-meta-setting-desc.c:6710
 #, fuzzy
 msgid "bluetooth connection"
-msgstr "Conexión de vínculo"
+msgstr "Conexión de vínculo %d"
 
 # auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
 #: ../clients/common/nm-meta-setting-desc.c:6711
 #, fuzzy
 msgid "Bond device"
-msgstr "Dispositivo Ethernet"
+msgstr "Ethernet"
 
 # auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
 #: ../clients/common/nm-meta-setting-desc.c:6712
 #, fuzzy
 msgid "Bridge device"
-msgstr "Dispositivo Ethernet"
+msgstr "Ethernet"
 
 # auto translated by TM merge from project: RHN Satellite UI, version: 5.5, DocId: java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
 #: ../clients/common/nm-meta-setting-desc.c:6713
@@ -5315,7 +5483,7 @@ msgstr "Conexión CDMA"
 #: ../clients/common/nm-meta-setting-desc.c:6725
 #, fuzzy
 msgid "macvlan connection"
-msgstr "Conexión de vínculo"
+msgstr "Conexión de vínculo %d"
 
 #: ../clients/common/nm-meta-setting-desc.c:6726
 #, fuzzy
@@ -5330,7 +5498,7 @@ msgstr "Iniciando"
 
 #: ../clients/common/nm-meta-setting-desc.c:6728
 msgid "PPPoE"
-msgstr ""
+msgstr "PPPoE"
 
 #: ../clients/common/nm-meta-setting-desc.c:6729
 msgid "Proxy"
@@ -5341,22 +5509,20 @@ msgstr ""
 msgid "Serial settings"
 msgstr "Parámetros disponibles: %s\n"
 
-# auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
 #: ../clients/common/nm-meta-setting-desc.c:6731
 #, fuzzy
 msgid "Team device"
-msgstr "Dispositivo Ethernet"
+msgstr "El dispositivo fue retirado"
 
 #: ../clients/common/nm-meta-setting-desc.c:6732
 #, fuzzy
 msgid "Team port"
 msgstr "Equipo "
 
-# auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
 #: ../clients/common/nm-meta-setting-desc.c:6733
 #, fuzzy
 msgid "Tun device"
-msgstr "Dispositivo Ethernet"
+msgstr "El dispositivo fue retirado"
 
 #: ../clients/common/nm-meta-setting-desc.c:6734
 #, fuzzy
@@ -5380,7 +5546,7 @@ msgstr "Conexión VXLAN"
 #: ../clients/common/nm-meta-setting-desc.c:6738
 #, fuzzy
 msgid "WiMAX connection"
-msgstr "Conexión CDMA"
+msgstr "Conexión CDMA %d"
 
 # auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
 #: ../clients/common/nm-meta-setting-desc.c:6739
@@ -6990,8 +7156,12 @@ msgstr ""
 
 #: ../clients/common/settings-docs.c.in:214
 #: ../clients/common/settings-docs.c.in:233
+#, fuzzy
 msgid "Array of IP addresses of DNS servers."
 msgstr ""
+"Ingrese una lista de direciones IPv4 de servidores DNS.\n"
+"\n"
+"Ejemplo: 8.8.8.8, 8.8.4.4\n"
 
 #: ../clients/common/settings-docs.c.in:215
 #: ../clients/common/settings-docs.c.in:234
@@ -7340,7 +7510,7 @@ msgstr ""
 #: ../clients/common/settings-docs.c.in:289
 #, fuzzy
 msgid "PAC script for the connection."
-msgstr "Activar una conexión"
+msgstr "Conexión CDMA %d"
 
 #: ../clients/common/settings-docs.c.in:290
 msgid "PAC URL for obtaining PAC file."
@@ -9892,14 +10062,14 @@ msgid "maximum number of user data entries reached"
 msgstr ""
 
 #: ../libnm-core/nm-setting-user.c:379
-#, c-format
+#, fuzzy, c-format
 msgid "invalid key \"%s\": %s"
-msgstr ""
+msgstr "Ruta inválida: %s"
 
 #: ../libnm-core/nm-setting-user.c:383
-#, c-format
+#, fuzzy, c-format
 msgid "invalid value for \"%s\": %s"
-msgstr ""
+msgstr "'%s' no es un valor váldo para '%s'"
 
 #: ../libnm-core/nm-setting-user.c:398
 #, c-format
@@ -10028,9 +10198,9 @@ msgid "'%s' can only be used with '%s=%s' (WEP)"
 msgstr "'%s' solamente se pueden usar con '%s=%s' (WEP)"
 
 #: ../libnm-core/nm-setting-wireless-security.c:1072
-#, c-format
+#, fuzzy, c-format
 msgid "'%s' can only be used with '%s=%s' or '%s=%s'"
-msgstr ""
+msgstr "'%s' solamente se pueden usar con '%s=%s' (WEP)"
 
 #: ../libnm-core/nm-setting-wireless-security.c:1094
 msgid "can't be simultaneously disabled and enabled"
@@ -11412,3 +11582,782 @@ msgstr "Nivel de registro desconocido «%s»"
 #, c-format
 msgid "Unknown log domain '%s'"
 msgstr "Dominio de registro desconocido «%s»"
+
+#~ msgid "Error: fields for '%s' options are missing."
+#~ msgstr "Error: faltan campos para opciones «%s»."
+
+#~ msgid "'%s' is not a valid value; use -1, 0 or 1"
+#~ msgstr "'%s' no es un valor válido; use ; use -1, 0 o 1"
+
+#~ msgid "%d (no)"
+#~ msgstr "%d (no)"
+
+#~ msgid "%d (yes)"
+#~ msgstr "%d (sí)"
+
+#~ msgid "'%d' is not valid; use <%d-%d>"
+#~ msgstr "'%d' no es válido; use <%d-%d>"
+
+#~ msgid "'%lld' is not valid; use <%lld-%lld>"
+#~ msgstr "'%lld' no es válido; use <%lld-%lld>"
+
+#~ msgid "'%u' is not valid; use <%u-%u>"
+#~ msgstr "'%u' no es válido; use <%u-%u>"
+
+#~ msgid "-1 (unset)"
+#~ msgstr "-1 (sin establecer)"
+
+#~ msgid "'%s' is not a DCB app priority"
+#~ msgstr "'%s' no es una prioridad app DCB"
+
+#~ msgid "invalid mode '%s', use one of %s"
+#~ msgstr "Modo inválido '%s'; use uno de %s"
+
+#~ msgid "'%s' is not valid; use [e, o, n]"
+#~ msgstr "'%s' no es válido; use [e, o, n]"
+
+#~ msgid "invalid option '%s', use '%s' or '%s'"
+#~ msgstr "Opción '%s' es inválida; use '%s' o '%s'"
+
+#~ msgid ""
+#~ "invalid option '%s', use a combination of [%s] or 'ignore', 'default' or "
+#~ "'none'"
+#~ msgstr ""
+#~ "opción inválida '%s', use una combinación de [%s] o 'ignore', 'default' o "
+#~ "'none'"
+
+#~ msgid "'default' and 'ignore' are incompatible with other flags"
+#~ msgstr "'default' e 'ignore' son incompatibles con otros indicadores"
+
+#~ msgid "always"
+#~ msgstr "Siempre"
+
+#~ msgid "invalid option '%s', use 'default', 'never' or 'always'"
+#~ msgstr "Opción '%s' es inválida, use 'default' 'never' o 'always'"
+
+#~ msgid "'%s' not among [0 (unknown), 1 (key), 2 (passphrase)]"
+#~ msgstr "'%s' no está entre [0 (desconocido), 1 (clave), 2 (frase de paso)]"
+
+#, fuzzy
+#~ msgid "unrecognized option '%s'"
+#~ msgstr "Opción inválida: '%s'"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "IP4"
+#~ msgstr "IP4"
+
+#~ msgid "OPTION"
+#~ msgstr "OPCIÓN"
+
+#~ msgid "ADDRESS"
+#~ msgstr "DIRECCIÓN"
+
+#~ msgid "GATEWAY"
+#~ msgstr "PUERTA DE ENLACE"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "ROUTE"
+#~ msgstr "RUTA"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DOMAIN"
+#~ msgstr "DOMINIO"
+
+#~ msgid "NAME"
+#~ msgstr "NOMBRE"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "TYPE"
+#~ msgstr "TIPO"
+
+#~ msgid "TIMESTAMP"
+#~ msgstr "MARCA DE TIEMPO"
+
+#~ msgid "TIMESTAMP-REAL"
+#~ msgstr "MARCA DE TIEMPO-REAL"
+
+#~ msgid "AUTOCONNECT"
+#~ msgstr "AUTOCONECTAR"
+
+#~ msgid "AUTOCONNECT-PRIORITY"
+#~ msgstr "AUTOCONNECT-PRIORITY"
+
+#~ msgid "READONLY"
+#~ msgstr "SÓLOLECTURA"
+
+#~ msgid "DBUS-PATH"
+#~ msgstr "RUTA-DBUS"
+
+#~ msgid "ACTIVE"
+#~ msgstr "ACTIVO"
+
+#~ msgid "DEVICE"
+#~ msgstr "DISPOSITIVO"
+
+#~ msgid "STATE"
+#~ msgstr "ESTADO"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "ACTIVE-PATH"
+#~ msgstr "ACTIVE-PATH"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#, fuzzy
+#~ msgid "SLAVE"
+#~ msgstr "ESCLAVOS"
+
+#~ msgid "DEVICES"
+#~ msgstr "DISPOSITIVOS"
+
+#~ msgid "DEFAULT"
+#~ msgstr "PREDETERMINADO"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "DEFAULT6"
+#~ msgstr "PREDETERMINADO6"
+
+#~ msgid "SPEC-OBJECT"
+#~ msgstr "OBJETO SPEC"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "CON-PATH"
+#~ msgstr "CON-RUTA"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "ZONE"
+#~ msgstr "ZONA"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "MASTER-PATH"
+#~ msgstr "MASTER-RUTA"
+
+#~ msgid "USERNAME"
+#~ msgstr "Nombre de usuario"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "BANNER"
+#~ msgstr "INDICADOR"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "VPN-STATE"
+#~ msgstr "ESTADO-VPN"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "CFG"
+#~ msgstr "CFG"
+
+#~ msgid "GENERAL"
+#~ msgstr "GENERAL"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "DHCP4"
+#~ msgstr "DHCP4"
+
+#~ msgid "IP6"
+#~ msgstr "IP6"
+
+#~ msgid "DHCP6"
+#~ msgstr "DHCP6"
+
+#~ msgid "CONNECTION"
+#~ msgstr "CONEXIÓN"
+
+#~ msgid "CON-UUID"
+#~ msgstr "CON-UUID"
+
+#~ msgid "NM-TYPE"
+#~ msgstr "NM-TYPE"
+
+#~ msgid "VENDOR"
+#~ msgstr "PROVEEDOR"
+
+#~ msgid "PRODUCT"
+#~ msgstr "PRODUCTO"
+
+#~ msgid "DRIVER"
+#~ msgstr "CONTROLADOR"
+
+#~ msgid "DRIVER-VERSION"
+#~ msgstr "VERSIÓN DE CONTROLADOR"
+
+#~ msgid "FIRMWARE-VERSION"
+#~ msgstr "VERSIÓN DE FIRMWARE"
+
+#~ msgid "HWADDR"
+#~ msgstr "HWADDR"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "REASON"
+#~ msgstr "RAZÓN"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "UDI"
+#~ msgstr "UDI"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "IP-IFACE"
+#~ msgstr "IP-IFACE"
+
+#~ msgid "IS-SOFTWARE"
+#~ msgstr "IS-SOFTWARE"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "NM-MANAGED"
+#~ msgstr "NM-ADMINISTRADO"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "FIRMWARE-MISSING"
+#~ msgstr "FALTA-FIRMWARE"
+
+#~ msgid "NM-PLUGIN-MISSING"
+#~ msgstr "NM-PLUGIN-MISSING"
+
+#~ msgid "PHYS-PORT-ID"
+#~ msgstr "PHYS-PORT-ID"
+
+#~ msgid "METERED"
+#~ msgstr "METERED"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "AVAILABLE-CONNECTION-PATHS"
+#~ msgstr "RUTAS DE CONEXIÓN DISPONIBLES"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "AVAILABLE-CONNECTIONS"
+#~ msgstr "CONEXIONES DISPONIBLES"
+
+#~ msgid "CARRIER-DETECT"
+#~ msgstr "DETECTAR-PORTADOR"
+
+#~ msgid "SPEED"
+#~ msgstr "VELOCIDAD"
+
+#~ msgid "CARRIER"
+#~ msgstr "PORTADOR"
+
+#~ msgid "S390-SUBCHANNELS"
+#~ msgstr "S390-SUBCHANNELS"
+
+#~ msgid "WPA"
+#~ msgstr "WPA"
+
+#~ msgid "TKIP"
+#~ msgstr "TKIP"
+
+#~ msgid "CCMP"
+#~ msgstr "CCMP"
+
+#~ msgid "AP"
+#~ msgstr "AP"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "ADHOC"
+#~ msgstr "ADHOC"
+
+#~ msgid "2GHZ"
+#~ msgstr "2GHZ"
+
+#~ msgid "5GHZ"
+#~ msgstr "5GHZ"
+
+#~ msgid "CTR-FREQ"
+#~ msgstr "CTR-FREC"
+
+#~ msgid "RSSI"
+#~ msgstr "RSSI"
+
+#~ msgid "CINR"
+#~ msgstr "CINR"
+
+#~ msgid "TX-POW"
+#~ msgstr "TX-POW"
+
+#~ msgid "BSID"
+#~ msgstr "BSID"
+
+#~ msgid "SSID-HEX"
+#~ msgstr "SSID-HEX"
+
+#~ msgid "MODE"
+#~ msgstr "MODO"
+
+#~ msgid "CHAN"
+#~ msgstr "CHAN"
+
+#~ msgid "FREQ"
+#~ msgstr "FREC"
+
+#~ msgid "RATE"
+#~ msgstr "TASA"
+
+#~ msgid "SIGNAL"
+#~ msgstr "SEÑAL"
+
+#~ msgid "BARS"
+#~ msgstr "BARS"
+
+#~ msgid "SECURITY"
+#~ msgstr "SEGURIDAD"
+
+#~ msgid "WPA-FLAGS"
+#~ msgstr "INDICADORES-WPA"
+
+#~ msgid "RSN-FLAGS"
+#~ msgstr "INDICADORES-RSN"
+
+#~ msgid "NSP"
+#~ msgstr "PSR"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "SLAVES"
+#~ msgstr "ESCLAVOS"
+
+#~ msgid "PARENT"
+#~ msgstr "PARENT"
+
+# auto translated by TM merge from project: RHN Satellite UI, version: 5.5, DocId: java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "CAPABILITIES"
+#~ msgstr "FUNCIONALIDADES"
+
+#~ msgid "WIFI-PROPERTIES"
+#~ msgstr "PROPIEDADES-WIFI"
+
+#~ msgid "WIRED-PROPERTIES"
+#~ msgstr "PROPIEDADES ALÁMBRICAS"
+
+#~ msgid "WIMAX-PROPERTIES"
+#~ msgstr "PROPIEDADES-WIMAX"
+
+#~ msgid "BLUETOOTH"
+#~ msgstr "BLUETOOTH"
+
+#~ msgid "CONNECTIONS"
+#~ msgstr "CONEXIONES"
+
+#~ msgid "CHASSIS-ID"
+#~ msgstr "CHASSIS-ID"
+
+#~ msgid "PORT-ID"
+#~ msgstr "PORT-ID"
+
+#~ msgid "PORT-DESCRIPTION"
+#~ msgstr "PORT-DESCRIPTION"
+
+#~ msgid "SYSTEM-NAME"
+#~ msgstr "SYSTEM-NAME"
+
+#~ msgid "SYSTEM-DESCRIPTION"
+#~ msgstr "SYSTEM-DESCRIPTION"
+
+#~ msgid "SYSTEM-CAPABILITIES"
+#~ msgstr "SYSTEM-CAPABILITIES"
+
+#~ msgid "IEEE-802-1-PVID"
+#~ msgstr "IEEE-802-1-PVID"
+
+#~ msgid "IEEE-802-1-PPVID"
+#~ msgstr "IEEE-802-1-PPVID"
+
+#~ msgid "IEEE-802-1-PPVID-FLAGS"
+#~ msgstr "IEEE-802-1-PPVID-FLAGS"
+
+#~ msgid "IEEE-802-1-VID"
+#~ msgstr "IEEE-802-1-VID"
+
+#~ msgid "IEEE-802-1-VLAN-NAME"
+#~ msgstr "IEEE-802-1-VLAN-NAME"
+
+#~ msgid "DESTINATION"
+#~ msgstr "DESTINO"
+
+#~ msgid "CHASSIS-ID-TYPE"
+#~ msgstr "CHASSIS-ID-TYPE"
+
+#~ msgid "PORT-ID-TYPE"
+#~ msgstr "PORT-ID-TYPE"
+
+#, fuzzy
+#~ msgid "identity"
+#~ msgstr "Identidad"
+
+#, fuzzy
+#~ msgid "ca-cert-password"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "client-cert-password"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "password"
+#~ msgstr "Contraseña"
+
+#, fuzzy
+#~ msgid "password-flags"
+#~ msgstr "Contraseña"
+
+#, fuzzy
+#~ msgid "password-raw"
+#~ msgstr "Contraseña"
+
+#, fuzzy
+#~ msgid "private-key"
+#~ msgstr "Llave privada inválida "
+
+#, fuzzy
+#~ msgid "private-key-password"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "private-key-password-flags"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "phase2-private-key"
+#~ msgstr "Llave privada phase2 inválida"
+
+#, fuzzy
+#~ msgid "phase2-private-key-password"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "phase2-private-key-password-flags"
+#~ msgstr "Contraseña de llave privada"
+
+#, fuzzy
+#~ msgid "username"
+#~ msgstr "Nombre de usuario"
+
+#, fuzzy
+#~ msgid "encapsulation"
+#~ msgstr "Encapsulación ADSL"
+
+#, fuzzy
+#~ msgid "type"
+#~ msgstr "Tipo de VPN:"
+
+#, fuzzy
+#~ msgid "mac-address"
+#~ msgstr "Direcciones"
+
+#, fuzzy
+#~ msgid "priority"
+#~ msgstr "Prioridad"
+
+#, fuzzy
+#~ msgid "forward-delay"
+#~ msgstr "Demora de envío"
+
+#, fuzzy
+#~ msgid "hello-time"
+#~ msgstr "Hello time"
+
+#, fuzzy
+#~ msgid "ageing-time"
+#~ msgstr "Tiempo de caducidad"
+
+#, fuzzy
+#~ msgid "path-cost"
+#~ msgstr "Costo de ruta"
+
+#, fuzzy
+#~ msgid "hairpin-mode"
+#~ msgstr "Modo de Hairpin"
+
+#, fuzzy
+#~ msgid "id"
+#~ msgstr "Ocultar"
+
+#, fuzzy
+#~ msgid "stable-id"
+#~ msgstr "desactivado"
+
+#, fuzzy
+#~ msgid "interface-name"
+#~ msgstr "Nombre de interfaz [*]: "
+
+# auto translated by TM merge from project: RHN Satellite Installation Guide, version: 5.5, DocId: Trouble_Shooting
+#, fuzzy
+#~ msgid "autoconnect-priority"
+#~ msgstr "Conectividad"
+
+#, fuzzy
+#~ msgid "permissions"
+#~ msgstr "Falta propiedad "
+
+#, fuzzy
+#~ msgid "secondaries"
+#~ msgstr "segundos"
+
+# auto translated by TM merge from project: RHN Satellite UI, version: 5.5, DocId: java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+#, fuzzy
+#~ msgid "network-id"
+#~ msgstr "Redes"
+
+#, fuzzy
+#~ msgid "device-id"
+#~ msgstr "Dispositivo"
+
+#, fuzzy
+#~ msgid "transport-mode"
+#~ msgstr "Modo de transporte"
+
+#, fuzzy
+#~ msgid "parent"
+#~ msgstr "Padre"
+
+#, fuzzy
+#~ msgid "dns-priority"
+#~ msgstr "Prioridad"
+
+#, fuzzy
+#~ msgid "addresses"
+#~ msgstr "Direcciones"
+
+#, fuzzy
+#~ msgid "gateway"
+#~ msgstr "Puerta de enlace"
+
+#, fuzzy
+#~ msgid "dhcp-send-hostname"
+#~ msgstr "Nuevo nombre de host"
+
+#, fuzzy
+#~ msgid "dhcp-hostname"
+#~ msgstr "Nombre de host"
+
+# auto translated by TM merge from project: Skynet topics, version: 1, DocId: 4680-83989
+#, fuzzy
+#~ msgid "never-default"
+#~ msgstr "predeterminado"
+
+#, fuzzy
+#~ msgid "mode"
+#~ msgstr "Modo de transporte"
+
+#, fuzzy
+#~ msgid "remote"
+#~ msgstr "Retirar"
+
+#, fuzzy
+#~ msgid "encapsulation-limit"
+#~ msgstr "Encapsulación ADSL"
+
+#, fuzzy
+#~ msgid "validation"
+#~ msgstr "Ruta inválida: %s"
+
+#, fuzzy
+#~ msgid "channel"
+#~ msgstr "Canal"
+
+#, fuzzy
+#~ msgid "service"
+#~ msgstr "Servicio"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#, fuzzy
+#~ msgid "noauth"
+#~ msgstr "auth"
+
+#, fuzzy
+#~ msgid "mppe-stateful"
+#~ msgstr "Usar estados MPPE"
+
+#, fuzzy
+#~ msgid "ingress-priority-map"
+#~ msgstr "Mapas de prioridad de ingreso [none]: "
+
+#, fuzzy
+#~ msgid "egress-priority-map"
+#~ msgstr "Mapas de prioridad de egreso [none]: "
+
+#, fuzzy
+#~ msgid "service-type"
+#~ msgstr "Servicio"
+
+#, fuzzy
+#~ msgid "user-name"
+#~ msgstr "Nombre de usuario"
+
+#, fuzzy
+#~ msgid "secrets"
+#~ msgstr "secretos VPN válidos"
+
+#, fuzzy
+#~ msgid "destination-port"
+#~ msgstr "Destino"
+
+#, fuzzy
+#~ msgid "limit"
+#~ msgstr "limitado"
+
+#, fuzzy
+#~ msgid "learning"
+#~ msgstr "ejecutando"
+
+#, fuzzy
+#~ msgid "network-name"
+#~ msgstr "Nuevo nombre de host"
+
+#, fuzzy
+#~ msgid "cloned-mac-address"
+#~ msgstr "Dirección MAC clonada"
+
+#, fuzzy
+#~ msgid "hidden"
+#~ msgstr "<hidden>"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#, fuzzy
+#~ msgid "auth-alg"
+#~ msgstr "auth"
+
+#, fuzzy
+#~ msgid "leap-username"
+#~ msgstr "Nombre de usuario"
+
+#, fuzzy
+#~ msgid "leap-password"
+#~ msgstr "Agrupar contraseña"
+
+#, fuzzy
+#~ msgid "bluetooth"
+#~ msgstr "Bluetooth"
+
+# auto translated by TM merge from project: RHN Satellite UI, version: 5.5, DocId: java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+#, fuzzy
+#~ msgid "bridge"
+#~ msgstr "Puente"
+
+# auto translated by TM merge from project: RHN Satellite UI, version: 5.5, DocId: java/code/src/com/redhat/rhn/frontend/strings/jsp/StringResource
+#, fuzzy
+#~ msgid "bridge-port"
+#~ msgstr "Puente"
+
+# auto translated by TM merge from project: RHEL Migration Planning Guide, version: 6.4, DocId: Networking
+#, fuzzy
+#~ msgid "infiniband"
+#~ msgstr "Infiniband"
+
+#, fuzzy
+#~ msgid "team-port"
+#~ msgstr "Equipo "
+
+#, fuzzy
+#~ msgid "tun"
+#~ msgstr "Tun"
+
+# auto translated by TM merge from project: virt-manager, version: 0.9.0, DocId: virt-manager
+#, fuzzy
+#~ msgid "802-3-ethernet"
+#~ msgstr "Ethernet"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "WINS"
+#~ msgstr "WINS"
+
+#, fuzzy
+#~ msgid "Connection type"
+#~ msgstr "Tipo de conexión:"
+
+#, fuzzy
+#~ msgid "Master"
+#~ msgstr "Maestro de vínculo: "
+
+#, fuzzy
+#~ msgid "Bluetooth type"
+#~ msgstr "Bluetooth"
+
+#, fuzzy
+#~ msgid "Bonding mode"
+#~ msgstr "Enlace de monitorización"
+
+# auto translated by TM merge from project: control-center, version: 3.8.3, DocId: gnome-control-center-2.0
+#~ msgid "Wi-Fi mode"
+#~ msgstr "Modo Wi-Fi"
+
+#, fuzzy
+#~ msgid "IP Tunnel mode"
+#~ msgstr "Editar conexión"
+
+#, fuzzy
+#~ msgid "MACVLAN mode"
+#~ msgstr "VLAN"
+
+#, fuzzy
+#~ msgid "MACsec mode"
+#~ msgstr "VLAN"
+
+#~ msgid "Error: don't know how to create '%s' setting."
+#~ msgstr "Error: no se sabe cómo crear el parámetro '%s'."
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "RUNNING"
+#~ msgstr "EJECUTANDO"
+
+#~ msgid "VERSION"
+#~ msgstr "VERSIÓN"
+
+#~ msgid "STARTUP"
+#~ msgstr "INICIO"
+
+#~ msgid "CONNECTIVITY"
+#~ msgstr "CONECTIVIDAD"
+
+#~ msgid "NETWORKING"
+#~ msgstr "RED"
+
+#~ msgid "WIFI-HW"
+#~ msgstr "WIFI-HW"
+
+#~ msgid "WIFI"
+#~ msgstr "WIFI"
+
+#~ msgid "WWAN-HW"
+#~ msgstr "WWAN-HW"
+
+#~ msgid "WWAN"
+#~ msgstr "WWAN"
+
+#~ msgid "WIMAX-HW"
+#~ msgstr "WIMAX-HW"
+
+#~ msgid "WIMAX"
+#~ msgstr "WIMAX"
+
+# auto translated by TM merge from project: NetworkManager, version: 0.9.8.2, DocId: NetworkManager
+#~ msgid "PERMISSION"
+#~ msgstr "PERMISO"
+
+#~ msgid "VALUE"
+#~ msgstr "VALOR"
+
+#~ msgid "LEVEL"
+#~ msgstr "NIVEL"
+
+#~ msgid "DOMAINS"
+#~ msgstr "DOMINIOS"
+
+#~ msgid "index '%s' is not valid"
+#~ msgstr "index '%s' no es válido"
+
+#~ msgid "'%s' is not a valid InfiniBand MAC"
+#~ msgstr "'%s' no es un InfiniBand MAC válido"
+
+#~ msgid "Option '--terse' requires specifying '--fields'"
+#~ msgstr "Opción «--terse» requiere especificar «--fields»"
+
+#~ msgid ""
+#~ "Option '--terse' requires specific '--fields' option values , not '%s'"
+#~ msgstr ""
+#~ "Opción «--terse» requiere valores de «--fields» específicos, no «%s»"
